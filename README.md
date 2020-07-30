@@ -8,6 +8,7 @@ L1 Pool is Handled By Native Driver MongoDb  ‌, Besides That L2 Pool is Array 
 
 
 ##### How to use
+***-app.js***
 ```js
 let client = require("mongo-turbo-connection")
 let mongo =new client("DBNAME","IP/Mongo_Server","User","Password",Mongo_PORT,L1POOL,L2POOL);
@@ -25,3 +26,12 @@ let mongo =new client("DBNAME","IP/Mongo_Server","User","Password",Mongo_PORT,L1
 })()
 
 ```
+***Run Code***
+```bash script
+# npm i mongo-turbo-connection
+# node app.js
+```
+
+***NPM Address***
+
+https://www.npmjs.com/package/mongo-turbo-connection
