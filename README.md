@@ -11,7 +11,7 @@ L1 Pool is Handled By Native Driver MongoDb  ‌, Besides That L2 Pool is Array 
 ***-app.js***
 ```js
 let client = require("mongo-turbo-connection")
-let mongo =new client("DBNAME","IP/Mongo_Server","User","Password",Mongo_PORT,L1POOL,L2POOL);
+let mongo =new client("MongoURI","DBNAME","IP/Mongo_Server","User","Password",Mongo_PORT,L1POOL,L2POOL);
 
 (async ()=>{
   try {

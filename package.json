@@ -1,6 +1,6 @@
 {
   "name": "mongo-turbo-connection",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Connection Manager and Connection Pool For Mongo Db",
   "main": "index.js",
   "scripts": {
