@@ -4,14 +4,13 @@ class MongoConnection
 {
   static mongo_client = []
   static ind = 0
-  constructor (db, host, user, password, port, L1_Pool = 10 ,L2_Pool=10) {
+  constructor (uri ,db, host, user, password, port, L1_Pool = 10 ,L2_Pool=10) {
     this.db=db
     this.l1pool = L1_Pool
     this.l2pool = L2_Pool
-    this.url = `mongodb://${user}:${password}@${host}:${port}`;
+    this.url =uri!=null?uri : `mongodb://${user}:${password}@${host}:${port}`;
 
   }
-
 
   index(){
   if(MongoConnection.ind===this.l2pool) MongoConnection.ind=0
